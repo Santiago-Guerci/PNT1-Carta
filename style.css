@@ -10,15 +10,16 @@ header {
 
 body {
   background-color: rgb(196, 153, 88);
+  font-size: large;
 }
 
-.container {
+/* .container {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-}
+} */
 
 .headerContainer {
   margin: 1rem 2rem;
@@ -26,6 +27,11 @@ body {
   text-align: center;
   background-color: #ffffdd8e;
   border-radius: 20px;
+}
+
+section,
+footer {
+  text-align: center;
 }
 
 li {
@@ -40,10 +46,13 @@ li {
   flex: 50%;
 }
 
+.card-body {
+  background-color: bisque;
+}
+
 .imagenComida {
-  height: 100px;
-  width: 140px;
-  border-radius: 10%;
+  height: 190px;
+  width: 286px;
 }
 
 .instaImage {
