@@ -197,21 +197,21 @@
         <div>
             <h2 class="p-4">Hacé tu reserva</h2>
         </div>
-        <form id="formStructure" action="POST">
+        <form id="formStructure" method="dialog" onsubmit="validarDatos()">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Cosme Fulanito">
+            <input type="text" name="nombre" id="nombre" placeholder="Cosme Fulanito" required>
 
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="cosme.fulanito@yahoo.com.ar">
+            <input type="email" name="email" id="email" placeholder="cosme.fulanito@yahoo.com.ar" required>
 
             <label for="telefono">Teléfono</label>
             <input type="tel" name="telefono" id="telefono" placeholder="11-1234-5678">
 
             <label for="cantidad">Cantidad de personas</label>
-            <input type="number" name="cantidad" id="cantidad" placeholder="4">
+            <input type="number" name="cantidad" id="cantidad" placeholder="4" required>
 
             <label for="fecha">Fecha</label>
-            <input type="date" onchange="validateDate()" name="fecha" id="fecha">
+            <input type="date" name="fecha" id="fecha" required>
 
             <button type="submit" class="btn btn-primary">Confirmar reserva</button>
         </form>
@@ -222,7 +222,7 @@
 
 
     <footer>
-        <h3>LA CABRERA</h3>
+        <h3 class="p-4">LA CABRERA</h3>
         <p>Cabrera5099
             <br>
             Palermo, Buenos Aires
